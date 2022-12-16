@@ -1,54 +1,57 @@
-// Gathering HTML elements for manipulation
-var quizBody = document.getElementById("quiz");
-var resultsEl = document.getElementById("result");
-var finalScoreEl = document.getElementById("finalScore");
-var gameoverDiv = document.getElementById("gameover");
-var questionsEl = document.getElementById("questions");
-var quizTimer = document.getElementById("timer");
-var startQuizButton = document.getElementById("startbtn");
-var startQuizDiv = document.getElementById("startpage");
-var highscoreContainer = document.getElementById("highscoreContainer");
-var highscoreDiv = document.getElementById("high-scorePage");
-var highscoreInputName = document.getElementById("initials");
-var highscoreDisplayName = document.getElementById("highscore-initials");
-var endGameBtns = document.getElementById("endGameBtns");
-var submitScoreBtn = document.getElementById("submitScore");
-var highscoreDisplayScore = document.getElementById("highscore-score");
-var buttonA = document.getElementById("a");
-var buttonB = document.getElementById("b");
-var buttonC = document.getElementById("c");
-var buttonD = document.getElementById("d");
+const quizBody = document.getElementById("quiz");
+const resultsEl = document.getElementById("result");
+const finalScoreEl = document.getElementById("finalScore");
+const gameoverDiv = document.getElementById("gameover");
+const questionsEl = document.getElementById("questions");
+const quizTimer = document.getElementById("timer");
+const startQuizButton = document.getElementById("startbtn");
+const startQuizDiv = document.getElementById("startpage");
+const highscoreContainer = document.getElementById("highscoreContainer");
+const highscoreDiv = document.getElementById("high-scorePage");
+const highscoreInputName = document.getElementById("initials");
+const highscoreDisplayName = document.getElementById("highscore-initials");
+const endGameBtns = document.getElementById("endGameBtns");
+const submitScoreBtn = document.getElementById("submitScore");
+const highscoreDisplayScore = document.getElementById("highscore-score");
+const buttonA = document.getElementById("a");
+const buttonB = document.getElementById("b");
+const buttonC = document.getElementById("c");
+const buttonD = document.getElementById("d");
 
-// Quiz question object
-var quizQuestions = [{
+const quizQuestions = [
+  {
     question: "How many elements can you apply an 'ID' attribute to?",
     choiceA: "As many as you want",
     choiceB: "3",
     choiceC: "1",
     choiceD: "128",
-    correctAnswer: "c"},
+    correctAnswer: "c"
+  },
   {
     question: "What does DOM stand for?",
     choiceA: "Document Object Model",
     choiceB: "Display Object Management",
     choiceC: "Digital Ordinance Model",
     choiceD: "Desktop Oriented Mode",
-    correctAnswer: "a"},
-   {
+    correctAnswer: "a"
+  },
+  {
     question: "What is used primarily to add styling to a web page?",
     choiceA: "HTML",
     choiceB: "CSS",
     choiceC: "Python",
     choiceD: "React.js",
-    correctAnswer: "b"},
-    {
+    correctAnswer: "b"
+  },
+  {
     question: "What HTML tags are JavaScript code wrapped in?",
     choiceA: "&lt;div&gt;",
     choiceB: "&lt;link&gt;",
     choiceC: "&lt;head&gt;",
     choiceD: "&lt;script&gt;",
-    correctAnswer: "d"},
-    {
+    correctAnswer: "d"
+  },
+  {
     question: "When is localStorage data cleared?",
     choiceA: "No expiration time",
     choiceB: "On page reload",
